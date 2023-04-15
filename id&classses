@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #firstId {
+
+        color: blue;
+        text-align: center;
+    }
+
+    .firstClass {
+
+        color: brown;
+        text-decoration: dotted;
+    }
+
+</style>
+<body>
+    <script src="practice.js"></script>
+
+    <button>Click ME!</button>
+
+
+    <h1 id = "firstId" class = "firstClass">This is new Heading</h1>
+    <p class = "firstClass">Creating out first class in the paragraph</p>
+    <p class = "firstClass">Creating out first class again in the paragraph</p>
+    <h2 id = "secondId">This is the second id</h2>
+    <p class = "secondClass" id = "firstId" >Checking if we can take id in 2 elements</p>
+    <h3 id = "secondId">Overlapping the id once again</h3>
+
+    <ul>
+        <li random = "13">This is for get & set Attributes</li>
+        <li id="item">getElementsByTagName</li>
+        <li class="selectors">getElementsByClassName</li>
+        <li class="selectors">getElementById</li>
+        <li id="item">querySelector</li>
+        <li id="item">querySelectorAll</li>
+        
+    </ul>
+
+
+
+
+</body>
+</html>
