@@ -1,0 +1,51 @@
+// creating multiple promises :
+
+const p1 = new Promise (function (resolve, reject) {
+    setTimeout (function () {
+        
+        resolve(5);
+
+    }, 5000);
+    
+});
+
+const p2 = new Promise ( (resolve, reject) => {
+
+    resolve("This is promise 2, ain't no breakin");
+});
+
+const p3 = new Promise (function (resolve, reject) {
+    reject("Ima reject the sh*t outta it");  
+});
+
+const p4 = new Promise (function (resolve, reject) {
+    setTimeout (function (){
+        resolve("I could sure go for a little ride YO!");
+    }, 4000); 
+});
+
+// p1.then ( function (value) {
+//     console.log("P1 is settled YO!" + "",value);
+// });
+
+// p2.then (function (value){
+//     console.log(value);
+// });
+
+// p3.catch (function (v) {
+//     console.log(v);
+// }); // to avoid the error in console or catch the error we use .catch ()
+
+// // if we use p3.then() it will give error in console.
+
+// p4.then (function (v1) {
+//     console.log(v1);
+// });
+
+
+// promise.all() -
+
+let promise_all = Promise.all([p1, p2, p4])
+promise_all.then( function (value) {
+    console.log(value);
+});
